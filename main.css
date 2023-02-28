@@ -1,0 +1,208 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    font-family: 'League Spartan', sans-serif;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5rem;
+}
+
+.start {
+    width: 50%;
+}
+
+h1 {
+    color: var(--VeryDarkMagenta);
+    font-weight: 900;
+    font-size: 3rem;
+    width: 70%;
+    padding-bottom: 20px;
+    line-height: 1;
+}
+
+.start p {
+    line-height: 1.5;
+    color: var(--VeryDarkMagenta);
+    font-stretch: extra-expanded;
+    width: 70%;
+}
+
+.rates {
+    padding-left: 5rem;
+    width: 50%;
+    color: var(--VeryDarkMagenta);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 150px;
+}
+
+.rate1,
+.rate2,
+.rate3 {
+    display: flex;
+    background-color: var(--LightGrayishMagenta);
+    margin-bottom: 10px;
+    height: 50px;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.rate2 {
+    margin-left: 4rem;
+    width: 100%;
+}
+
+.rate3 {
+    margin-left: 7rem;
+    width: 100%;
+}
+
+.rates img {
+    padding-right: 10px
+}
+
+.rates span {
+    padding-left: 30px;
+}
+
+/*section 2 -------------------------------*/
+.boxes {
+    display: flex;
+    flex-direction: row;
+}
+.box1,.box2,.box3{
+    background-color: var(--VeryDarkMagenta);
+    margin-right:20px;
+    color: var(--LightGrayishMagenta);
+    padding: 30px;
+    border-radius: 5px;
+}
+.boxes .top p {
+    color: var(--SoftPink);
+}
+.boxes h2{
+    font-size: 18px;
+}
+.boxes img{
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.boxes .top {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.boxes p{
+    line-height: 1.5;
+    font-size: 14px;
+}
+.box2{
+    margin-top: 1rem;
+    height: 100%;
+}
+.box3{
+    margin-top: 2rem;
+    height: 100%;
+
+}
+@media(max-width:720px)
+{ main{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    width: 100%;
+
+}
+.info p{
+    text-align: center;
+    width: 100%;
+
+}
+.start{
+    width: 100%;
+}
+.rates{
+width: 100%;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0;
+}
+.rate1,
+.rate2,
+.rate3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box1,.box2,.box3{
+    margin-right: 0;
+}
+}
